@@ -24,9 +24,10 @@ int	ft_print_data(va_list args, const char c, int *printed_chars)
 		return (ft_putint(va_arg(args, int), printed_chars));
 	if (c == 'u')
 		return (ft_putuint(va_arg(args, unsigned int), printed_chars));
-	if (c == '%')
-		return (ft_putchar('%', printed_chars));
-	return (0);
+	if (c == 'x')
+		return (ft_puthexa(va_arg(args, unsigned int), printed_chars));
+	if (c == 'X')
+		return (ft_puthexa(va_arg(args, unsigned int), printed_chars));
 }
 
 int	ft_printf(const char *str, ...)
