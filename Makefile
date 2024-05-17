@@ -2,7 +2,7 @@ SDIR = srcs
 IDIR = includes
 
 MFILE = ft_printf.c
-SFILES = ft_putchar.c ft_putstr.c ft_putptr.c ft_putint.c ft_putuint.c
+SFILES =  ft_putchar.c ft_putstr.c ft_puthexa.c ft_putptr.c ft_putint.c ft_putuint.c
 
 SRCS = $(MFILE) $(SFILES:%=$(SDIR)/%)
 OBJS = $(SRCS:.c=.o)
