@@ -6,7 +6,7 @@
 /*   By: sabras <sabras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 23:49:41 by sabras            #+#    #+#             */
-/*   Updated: 2024/05/17 21:53:33 by sabras           ###   ########.fr       */
+/*   Updated: 2024/05/22 19:07:28 by sabras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,11 @@ static void	ft_print_data(va_list args, const char c, int *printed_chars)
 	if (c == 'u')
 		return (ft_putuint(va_arg(args, unsigned int), printed_chars));
 	if (c == 'x')
-		return (ft_puthexa(va_arg(args, unsigned int), printed_chars));
+		return (ft_puthexa(va_arg(args, unsigned int), "0123456789abcdef",
+				printed_chars));
 	if (c == 'X')
-		return (ft_puthexa(va_arg(args, unsigned int), printed_chars));
+		return (ft_puthexa(va_arg(args, unsigned int), "0123456789ABCDEF",
+				printed_chars));
 	ft_putchar('%', printed_chars);
 }
 
