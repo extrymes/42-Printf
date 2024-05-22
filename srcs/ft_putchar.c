@@ -6,14 +6,14 @@
 /*   By: sabras <sabras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 04:10:21 by sabras            #+#    #+#             */
-/*   Updated: 2024/05/17 18:58:46 by sabras           ###   ########.fr       */
+/*   Updated: 2024/05/22 19:14:10 by sabras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-void	ft_putchar(int c, int *printed_chars)
+void	ft_putchar(int c, int *printed)
 {
 	write(1, &c, 1);
-	(*printed_chars)++;
+	(*printed)++;
 }

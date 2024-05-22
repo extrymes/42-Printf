@@ -6,12 +6,13 @@
 /*   By: sabras <sabras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:35:53 by sabras            #+#    #+#             */
-/*   Updated: 2024/05/18 19:09:48 by sabras           ###   ########.fr       */
+/*   Updated: 2024/05/22 19:21:16 by sabras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/ft_printf.h"
 #include <stdio.h>
+#include <limits.h>
 
 int	main(void)
 {
