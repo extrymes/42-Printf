@@ -6,7 +6,7 @@
 /*   By: sabras <sabras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 23:49:41 by sabras            #+#    #+#             */
-/*   Updated: 2024/05/22 19:14:33 by sabras           ###   ########.fr       */
+/*   Updated: 2024/05/27 19:35:02 by sabras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	ft_printf(const char *str, ...)
 
 	va_start(args, str);
 	printed = 0;
+	if (!str)
+		return (-1);
 	while (*str)
 	{
 		if (*str == '%' && ft_is_valid_format(*(str + 1)))
