@@ -6,7 +6,7 @@
 /*   By: sabras <sabras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 23:49:41 by sabras            #+#    #+#             */
-/*   Updated: 2024/05/27 19:35:02 by sabras           ###   ########.fr       */
+/*   Updated: 2024/05/27 19:52:09 by sabras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	ft_printf(const char *str, ...)
 		return (-1);
 	while (*str)
 	{
+		if (*str == '%' && !*(str + 1))
+			return (-1);
 		if (*str == '%' && ft_is_valid_format(*(str + 1)))
 			ft_print_data(args, *(++str), &printed);
 		else
