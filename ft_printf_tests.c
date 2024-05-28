@@ -6,7 +6,7 @@
 /*   By: sabras <sabras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 17:35:53 by sabras            #+#    #+#             */
-/*   Updated: 2024/05/27 19:58:53 by sabras           ###   ########.fr       */
+/*   Updated: 2024/05/28 20:03:57 by sabras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,39 +144,39 @@ int	main(void)
 	printed_chars = ft_printf("ft_printf: %x\n", LONG_MAX);
 	printf("return: %d\n", printed_chars);
 	printf("--------- TEST 26 ---------\n");
+	printed_chars = printf("printf:    Hello World\n%");
+	printf("return: %d\n", printed_chars);
+	printed_chars = ft_printf("ft_printf: Hello World\n%");
+	printf("return: %d\n", printed_chars);
+	printf("--------- TEST 27 ---------\n");
+	printed_chars = printf("printf:    %c | %d\n", NULL, 42);
+	printf("return: %d\n", printed_chars);
+	printed_chars = ft_printf("ft_printf: %c | %d\n", NULL, 42);
+	printf("return: %d\n", printed_chars);
+	printf("--------- TEST 28 ---------\n");
+	printed_chars = printf("printf:    %s | %d\n", NULL, 42);
+	printf("return: %d\n", printed_chars);
+	printed_chars = ft_printf("ft_printf: %s | %d\n", NULL, 42);
+	printf("return: %d\n", printed_chars);
+	printf("--------- TEST 29 ---------\n");
+	printed_chars = printf("printf:    %x | %d\n", NULL, 42);
+	printf("return: %d\n", printed_chars);
+	printed_chars = ft_printf("ft_printf: %x | %d\n", NULL, 42);
+	printf("return: %d\n", printed_chars);
+	printf("--------- TEST 30 ---------\n");
 	printed_chars = printf(NULL);
 	printf("return: %d\n", printed_chars);
 	printed_chars = ft_printf(NULL);
 	printf("return: %d\n", printed_chars);
-	printf("--------- TEST 27 ---------\n");
+	printf("--------- TEST 31 ---------\n");
 	printed_chars = printf(0);
 	printf("return: %d\n", printed_chars);
 	printed_chars = ft_printf(0);
 	printf("return: %d\n", printed_chars);
-	printf("--------- TEST 28 ---------\n");
+	printf("--------- TEST 32 ---------\n");
 	printed_chars = printf("%");
 	printf("return: %d\n", printed_chars);
 	printed_chars = ft_printf("%");
-	printf("return: %d\n", printed_chars);
-	printf("--------- TEST 29 ---------\n");
-	printed_chars = printf("Hello World\n%");
-	printf("return: %d\n", printed_chars);
-	printed_chars = ft_printf("Hello World\n%");
-	printf("return: %d\n", printed_chars);
-	printf("--------- TEST 30 ---------\n");
-	printed_chars = printf("Hello World %c | %d\n", NULL, 42);
-	printf("return: %d\n", printed_chars);
-	printed_chars = ft_printf("Hello World %c | %d\n", NULL, 42);
-	printf("return: %d\n", printed_chars);
-	printf("--------- TEST 31 ---------\n");
-	printed_chars = printf("Hello World %s | %d\n", NULL, 42);
-	printf("return: %d\n", printed_chars);
-	printed_chars = ft_printf("Hello World %s | %d\n", NULL, 42);
-	printf("return: %d\n", printed_chars);
-	printf("--------- TEST 32 ---------\n");
-	printed_chars = printf("Hello World %x | %d\n", NULL, 42);
-	printf("return: %d\n", printed_chars);
-	printed_chars = ft_printf("Hello World %x | %d\n", NULL, 42);
 	printf("return: %d\n", printed_chars);
 	return (0);
 }
