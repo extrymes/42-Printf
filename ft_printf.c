@@ -6,7 +6,7 @@
 /*   By: sabras <sabras@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 23:49:41 by sabras            #+#    #+#             */
-/*   Updated: 2024/05/27 19:52:09 by sabras           ###   ########.fr       */
+/*   Updated: 2024/05/30 09:11:34 by sabras           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int	ft_printf(const char *str, ...)
 	va_start(args, str);
 	printed = 0;
 	if (!str)
-		return (-1);
+		return (va_end(args), -1);
 	while (*str)
 	{
 		if (*str == '%' && !*(str + 1))
-			return (-1);
+			return (va_end(args), -1);
 		if (*str == '%' && ft_is_valid_format(*(str + 1)))
 			ft_print_data(args, *(++str), &printed);
 		else
