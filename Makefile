@@ -9,7 +9,7 @@ OBJS = $(SRCS:.c=.o)
 
 NAME = libftprintf.a
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Wextra -Werror
 
 %.o: %.c
 	cc $(CFLAGS) -I $(IDIR) -c $< -o $@
