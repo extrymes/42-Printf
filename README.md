@@ -1,18 +1,29 @@
-<div align="center">
-	<img src="https://i.imgur.com/y2bQtnZ.png" width="250" height="250" alt="Logo" />
-	<h3>42-Printf</h3>
-	<p>
-		Project printf of 42 School
-		<br />
-		<a href="https://github.com/extrymes/42-Printf/blob/main/en.subject.pdf"><b>Read the subject »</b></a>
-		<br />
-		<br />
-	</p>
-	<p>
-		<img src="https://img.shields.io/github/languages/code-size/extrymes/42-Printf?color=steelblue" alt="GitHub code size in bytes" />
-		<img src="https://img.shields.io/github/languages/count/extrymes/42-Printf?color=mediumpurple" alt="Code language count" />
-		<img src="https://img.shields.io/github/languages/top/extrymes/42-Printf?color=mediumseagreen" alt="GitHub top language" />
-		<img src="https://img.shields.io/github/commit-activity/t/extrymes/42-Printf?color=cadetblue" alt="GitHub commit count" />
-		<img src="https://img.shields.io/github/last-commit/extrymes/42-Printf?color=salmon" alt="GitHub last commit" />
-	</p>
-</div>
+<img src="https://i.imgur.com/y2bQtnZ.png" width="150" height="150" alt="Logo" />
+
+# 42-Printf
+## Overview
+The **ft_printf** project from **42 School** involves recreating the standard C library function `printf()`. It focuses on building a formatted output function that handles multiple data types and provides formatted string output. This project helps build a deeper understanding of variadic functions, format specifiers, and output formatting in C.
+
+## Getting started
+There is no excutable for this project, you just need to make and use the function in your code.
+> If you are on macOS, make sure you have installed **Xcode Command Line Tools**.
+1. Clone this repository
+```bash
+git clone https://github.com/extrymes/42-Printf.git
+cd 42-Printf
+```
+2. Include the header file in your code
+```c
+#include "path/to/ft_printf.h"
+```
+3. Make and add the archive to your program compilation
+```bash
+make
+cc <file.c> libftprintf.a
+```
+You can compile `ft_printf_tests.c` to test the function.
+
+## Contributing
+We welcome contributions from everyone! Whether you're fixing bugs, adding new features, improving documentation, or simply sharing your ideas, your input is greatly appreciated.
+
+Thanks for visiting and happy coding!
